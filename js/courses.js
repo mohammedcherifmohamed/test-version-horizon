@@ -1,4 +1,4 @@
-fetch('/lessons.json')
+fetch('../lessons.json')
     .then(res => res.json())
     .then(courses => {
         const container = document.getElementById('courses-container');

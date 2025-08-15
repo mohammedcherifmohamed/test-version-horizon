@@ -1,7 +1,7 @@
 // main.js
 document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementById('lessons-container')) {
-        fetch('/lessons.json')
+        fetch('../lessons.json')
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('lessons-container');
