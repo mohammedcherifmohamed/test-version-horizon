@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlus - Quality Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.jpg" alt="EduPlus Logo" class="h-10 mr-2">
+                <span class="text-xl font-bold text-blue-600" data-i18n="school_name">EduPlus</span>
+            </div>
+            <!-- Language Switcher -->
+    <div class="bg-blue-600 text-white text-right py-1 px-4">
+        <select id="language-switcher" class="bg-blue-600 text-white text-sm border-none focus:ring-0">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+        </select>
+    </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-blue-600 font-medium hover:text-blue-800" data-i18n="home">Home</a>
+                <a href="#lessons" class="text-gray-700 hover:text-blue-600" data-i18n="lessons">Lessons</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600" data-i18n="contact">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-i18n="hero_title">Quality Education for Your Success</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-i18n="hero_subtitle">Personalized support lessons and English courses to help you achieve your academic goals.</p>
+            <a href="#lessons" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block" data-i18n="explore_lessons">Explore Lessons</a>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-i18n="available_lessons">Available Lessons</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="lessons-container">
+                <!-- Lessons will be loaded here dynamically -->
+                 
+            </div>
+             <div class="text-center mt-12">
+            <a href="courses.html" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition transform hover:scale-105">
+                See All Courses
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-i18n="cta_title">Ready to Get Started?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-i18n="cta_subtitle">Join hundreds of students who have transformed their academic performance with our expert tutors.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#lessons" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition transform hover:scale-105" data-i18n="browse_courses">Browse Courses</a>
+                <a href="contact.html" class="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-gray-900 transition transform hover:scale-105" data-i18n="schedule_consultation">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="school_name">EduPlus</h3>
+                    <p class="mb-4" data-i18n="footer_desc">Providing quality education and support lessons to help students excel in their academic journey.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="quick_links">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400" data-i18n="home">Home</a></li>
+                        <li><a href="#lessons" class="hover:text-blue-400" data-i18n="lessons">Lessons</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="contact_us">Contact Us</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> <span data-i18n="address">123 Education St, Knowledge City</span></p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i> <span data-i18n="phone">+123 456 7890</span></p>
+                    <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@eduplus.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p data-i18n="copyright">© 2023 EduPlus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
+</body>
+</html>
