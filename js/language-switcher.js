@@ -1,7 +1,7 @@
 // Language translations
 const translations = {
     en: {
-        school_name: "EduPlus",
+        school_name: "HorizonSchool",
         home: "Home",
         lessons: "Lessons",
         contact: "Contact",
@@ -20,7 +20,7 @@ const translations = {
         contact_us: "Contact Us",
         address: "123 Education St, Knowledge City",
         phone: "+123 456 7890",
-        copyright: "© 2023 EduPlus. All rights reserved.",
+        copyright: "© 2023 HorizonSchool. All rights reserved.",
         footer_desc: "Providing quality education and support lessons to help students excel in their academic journey.",
         enroll_now: "Enroll Now",
         course_description: "Course Description",
@@ -41,7 +41,7 @@ const translations = {
         schedule_consultation: "Schedule Consultation",
     },
     fr: {
-        school_name: "EduPlus",
+        school_name: "HorizonSchool",
         home: "Accueil",
         lessons: "Cours",
         contact: "Contact",
@@ -60,7 +60,7 @@ const translations = {
         contact_us: "Contactez-nous",
         address: "123 Rue de l'Éducation, Ville du Savoir",
         phone: "+123 456 7890",
-        copyright: "© 2023 EduPlus. Tous droits réservés.",
+        copyright: "© 2023 HorizonSchool. Tous droits réservés.",
         footer_desc: "Fournir une éducation de qualité et des cours de soutien pour aider les élèves à exceller dans leur parcours académique.",
         enroll_now: "S'inscrire maintenant",
         course_description: "Description du cours",
